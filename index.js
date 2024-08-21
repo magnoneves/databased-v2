@@ -23,7 +23,7 @@ async function init() {
             try {
                 const [results] = await mysqli.execute('INSERT INTO usuario(nome, email, senha) VALUES (?, ?, ?)', [nome, email, senha]);
                 console.log("Inserção feita com sucesso");
-                res.redirect("/login.html");
+                res.send("ola");
             } catch (err) {
                 console.log("Deu erro ao fazer a inserção", err);
                 res.status(500).send("Erro ao inserir dados.");
