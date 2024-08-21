@@ -60,11 +60,3 @@ async function init() {
 
 init();
 
-
-app.listen(3000, () => {
-    console.log("O servidor esta rodando na porta 3000");
-});
-console.log('Host:', 'roundhouse.proxy.rlwy.net');
-console.log('User:', 'root');
-console.log('Database:', 'railway');
-console.log('Port:', 48116);
