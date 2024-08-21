@@ -50,7 +50,7 @@ async function init() {
 
      
         app.listen(port, () => {
-            console.log("O servidor está rodando na porta 3000");
+            console.log("O servidor está rodando na porta {port}");
         });
         
     } catch (err) {
